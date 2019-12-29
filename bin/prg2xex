@@ -1,4 +1,3 @@
-"""Wrapper for prg2xex"""
 #!/usr/bin/env python3
 
 from prg2xex import convert
