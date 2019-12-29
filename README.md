@@ -1,6 +1,8 @@
 # prg2xex
 
-Convert [KickAssembler](http://theweb.dk/KickAssembler/Main.html#frontpage) `.prg` object code to Atari 8 Bit .`xex` file
+Convert [KickAssembler](http://theweb.dk/KickAssembler/Main.html#frontpage) `.prg` object code to Atari 8 Bit .`xex` file.
+
+It does this by prepending `0xff 0xff` to the beginning of the file and then inserting the end address of the code after the start address.
 
 ## Dependencies
 
