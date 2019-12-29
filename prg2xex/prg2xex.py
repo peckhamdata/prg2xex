@@ -1,6 +1,10 @@
+"""
+Convert KickAssembler .prg object code to Atari 8 Bit .xex format
+"""
 import sys
 
 def process(source):
+    """Convert bytearray in .prg format to .xex format"""
     xex = bytearray(b'\xff\xff')
     xex.append(source[0])
     xex.append(source[1])
@@ -10,6 +14,7 @@ def process(source):
     return xex + source[2:]
 
 def convert():
+    """Convert stdin .prg to stdout .xex"""
     try:
         data = sys.stdin.buffer.read()
     except AttributeError:
