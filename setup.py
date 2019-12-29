@@ -4,8 +4,8 @@ from setuptools import setup, setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setup(name='prg2xex-worldofchris',
-      version='0.0.1',
+setup(name='prg2xex',
+      version='0.0.3',
       description='Convert KickAssembler prg object code to Atari 8 Bit xex file',
       url='https://github.com/peckhamdata/prg2xex',
       author='worldofchris',
